@@ -1,69 +1,59 @@
-# DevOps Project Interview Preparation
+# DevOps Interview Preparation Master Repository
 
-## E-commerce Microservices Platform — Beginner to Advanced
+Welcome to the complete **DevOps Interview Preparation Master Repository**! 
 
-This repository contains a comprehensive interview preparation guide for a **microservices-based e-commerce application** with a production-oriented DevOps architecture.
-
----
-
-## 📁 Table of Contents (Click to Open Any Folder)
-
-Click any topic below to navigate directly to its questions, answers, keywords, and beginner-friendly explanations:
-
-| # | Topic / Tool Folder | Description & Key Questions Covered |
-|:---:|---|---|
-| **01** | [📂 `01-Project-Overview`](./01-Project-Overview/) | **Q1–Q4:** Project architecture, microservices vs monolith, polyglot tech stack, customer order flow |
-| **02** | [📂 `02-Linux-Networking`](./02-Linux-Networking/) | **Q5–Q8:** Linux fundamentals (`ps`, `df`, `free`, `journalctl`), SSH keys, ports, DNS vs HTTPS |
-| **03** | [📂 `03-AWS-Fundamentals`](./03-AWS-Fundamentals/) | **Q9–Q14:** AWS VPC, CIDR, public/private subnets, Internet Gateway, NAT Gateway, Security Groups |
-| **04** | [📂 `04-Terraform`](./04-Terraform/) | **Q15–Q21:** IaC, file layout, AWS provider, Floci endpoints, remote state in S3, modules, `count` vs `for_each` |
-| **05** | [📂 `05-Docker`](./05-Docker/) | **Q22–Q25:** Images vs containers, multi-stage Dockerfiles, CMD vs ENTRYPOINT, container registries |
-| **06** | [📂 `06-Jenkins-CICD`](./06-Jenkins-CICD/) | **Q26–Q30:** CI/CD concepts, commit-to-deploy workflow, Jenkinsfile pipelines, Trivy security scanning, GHCR |
-| **07** | [📂 `07-Kubernetes`](./07-Kubernetes/) | **Q31–Q38:** Pods, Deployments, Services, ConfigMaps, Secrets, PVCs, readiness/liveness/startup probes |
-| **08** | [📂 `08-Helm-Kustomize`](./08-Helm-Kustomize/) | **Q39–Q40:** Helm charts & `values.yaml`, Kustomize bases/overlays, when to use which |
-| **09** | [📂 `09-GitOps-ArgoCD`](./09-GitOps-ArgoCD/) | **Q41–Q43:** GitOps principles, Argo CD synchronization, self-healing, resource pruning, Image Updater |
-| **10** | [📂 `10-Gateway-API-ALB-DNS`](./10-Gateway-API-ALB-DNS/) | **Q44–Q50:** Gateway API (GatewayClass, Gateway, HTTPRoute), AWS Load Balancer Controller, Route 53, ACM |
-| **11** | [📂 `11-Autoscaling`](./11-Autoscaling/) | **Q51–Q54:** HPA (Horizontal Pod Autoscaler), Karpenter (node compute provisioning), VPA, KEDA event-driven scaling |
-| **12** | [📂 `12-Monitoring-Logging`](./12-Monitoring-Logging/) | **Q55–Q58:** Prometheus (TSDB metrics), Grafana (dashboards), Alertmanager, ELK Stack (Elasticsearch, Beats, Kibana) |
-| **13** | [📂 `13-Security`](./13-Security/) | **Q59–Q62:** Principle of least privilege, Kubernetes RBAC, NetworkPolicy isolation, CPU/memory requests & limits |
-| **14** | [📂 `14-Advanced-Architecture`](./14-Advanced-Architecture/) | **Q63–Q70:** Complete CI/CD flow, release rollbacks, Jenkins failure impact, bottleneck detection, pending Pods, ImagePullBackOff |
-| **15** | [📂 `15-Design-Decisions`](./15-Design-Decisions/) | **Q71–Q75:** GHCR vs ECR, Jenkins on Bastion vs isolated, Terraform vs CloudFormation, Route 53 + ExternalDNS |
-| **16** | [📂 `16-Rapid-Fire`](./16-Rapid-Fire/) | 25 rapid-fire definitions (EC2, EKS, ALB, AZ, IAM, ReplicaSet, DaemonSet, Canary, Blue-Green, etc.) |
-| **17** | [📂 `17-Difficult-Cross-Questions`](./17-Difficult-Cross-Questions/) | **Q76–Q85:** Tough architectural cross-questions testing deep understanding beyond surface definitions |
-| **18** | [📂 `18-Troubleshooting-Scenarios`](./18-Troubleshooting-Scenarios/) | Practical debug guides: service unreachable, local vs K8s differences, unknown HPA CPU, OutOfSync, ALB failures |
-| **19** | [📂 `19-Interview-Explanation`](./19-Interview-Explanation/) | 60-second architecture pitch, the "Rule of 5", and interview strategy |
-| **20** | [📂 `20-Study-Priority-Guide`](./20-Study-Priority-Guide/) | Priority matrix (Priority 1 to 12) and recommended weekly study schedule |
+This repository is structured into organized, dedicated knowledge modules. Rather than cluttering the root with dozens of files, the repository is split into two primary master guides. Click either guide below to open its table of contents and browse individual tool folders:
 
 ---
 
-## 📋 Study Priority Order
+## 📚 Master Interview Guides (Click to Open)
 
-| Priority | Topics | Folder Link | Questions Covered |
-|:---:|---|---|:---:|
-| **1** | Project Explanation | [📂 `01-Project-Overview`](./01-Project-Overview/) | Q1–Q4 |
-| **2** | Linux and Networking | [📂 `02-Linux-Networking`](./02-Linux-Networking/) | Q5–Q8 |
-| **3** | AWS Networking | [📂 `03-AWS-Fundamentals`](./03-AWS-Fundamentals/) | Q9–Q14 |
-| **4** | Terraform | [📂 `04-Terraform`](./04-Terraform/) | Q15–Q21 |
-| **5** | Docker | [📂 `05-Docker`](./05-Docker/) | Q22–Q25 |
-| **6** | Jenkins and CI/CD | [📂 `06-Jenkins-CICD`](./06-Jenkins-CICD/) | Q26–Q30 |
-| **7** | Kubernetes | [📂 `07-Kubernetes`](./07-Kubernetes/) | Q31–Q38 |
-| **8** | Helm and Kustomize | [📂 `08-Helm-Kustomize`](./08-Helm-Kustomize/) | Q39–Q40 |
-| **9** | GitOps and Argo CD | [📂 `09-GitOps-ArgoCD`](./09-GitOps-ArgoCD/) | Q41–Q43 |
-| **10** | Gateway API and AWS Integration | [📂 `10-Gateway-API-ALB-DNS`](./10-Gateway-API-ALB-DNS/) | Q44–Q50 |
-| **11** | Autoscaling and Observability | [📂 `11-Autoscaling`](./11-Autoscaling/) & [📂 `12-Monitoring-Logging`](./12-Monitoring-Logging/) | Q51–Q58 |
-| **12** | Security, Architecture & Scenarios | [📂 `13-Security`](./13-Security/), [📂 `14-Advanced-Architecture`](./14-Advanced-Architecture/), [📂 `17-Difficult-Cross-Questions`](./17-Difficult-Cross-Questions/), [📂 `18-Troubleshooting-Scenarios`](./18-Troubleshooting-Scenarios/) | Q59–Q85 |
-
----
-
-## 🎯 For Every Tool, Master These 5 Questions
-
-1. **What is it?** (Beginner-friendly definition)
-2. **Why did you choose it?** (Reason it belongs in your architecture)
-3. **How does it work in your project?** (What happens behind the scenes)
-4. **What happens if it fails?** (Impact and failure domain)
-5. **How would you troubleshoot it?** (Step-by-step diagnostic workflow)
+### [📁 `01-Ecommerce-DevOps-Platform/`](./01-Ecommerce-DevOps-Platform/)
+> **Part 1: E-commerce Microservices Platform Architecture & Hands-on Implementation**
+> 
+> Detailed architecture, code-to-cloud workflows, and technical cross-questions based on our production-oriented microservices platform (React, Python FastAPI, Go, Java Spring Boot, Node.js Storage Service, PostgreSQL, Docker, Terraform, Jenkins, GHCR, Argo CD, and Kubernetes on AWS EKS).
+> 
+> **Includes 20 organized sub-folders:**
+> - [01-Project-Overview](./01-Ecommerce-DevOps-Platform/01-Project-Overview/) • [02-Linux-Networking](./01-Ecommerce-DevOps-Platform/02-Linux-Networking/) • [03-AWS-Fundamentals](./01-Ecommerce-DevOps-Platform/03-AWS-Fundamentals/)
+> - [04-Terraform](./01-Ecommerce-DevOps-Platform/04-Terraform/) • [05-Docker](./01-Ecommerce-DevOps-Platform/05-Docker/) • [06-Jenkins-CICD](./01-Ecommerce-DevOps-Platform/06-Jenkins-CICD/)
+> - [07-Kubernetes](./01-Ecommerce-DevOps-Platform/07-Kubernetes/) • [08-Helm-Kustomize](./01-Ecommerce-DevOps-Platform/08-Helm-Kustomize/) • [09-GitOps-ArgoCD](./01-Ecommerce-DevOps-Platform/09-GitOps-ArgoCD/)
+> - [10-Gateway-API-ALB-DNS](./01-Ecommerce-DevOps-Platform/10-Gateway-API-ALB-DNS/) • [11-Autoscaling](./01-Ecommerce-DevOps-Platform/11-Autoscaling/) • [12-Monitoring-Logging](./01-Ecommerce-DevOps-Platform/12-Monitoring-Logging/)
+> - [13-Security](./01-Ecommerce-DevOps-Platform/13-Security/) • [14-Advanced-Architecture](./01-Ecommerce-DevOps-Platform/14-Advanced-Architecture/) • [15-Design-Decisions](./01-Ecommerce-DevOps-Platform/15-Design-Decisions/)
+> - [16-Rapid-Fire](./01-Ecommerce-DevOps-Platform/16-Rapid-Fire/) • [17-Difficult-Cross-Questions](./01-Ecommerce-DevOps-Platform/17-Difficult-Cross-Questions/) • [18-Troubleshooting-Scenarios](./01-Ecommerce-DevOps-Platform/18-Troubleshooting-Scenarios/)
+> - [19-Interview-Explanation](./01-Ecommerce-DevOps-Platform/19-Interview-Explanation/) • [20-Study-Priority-Guide](./01-Ecommerce-DevOps-Platform/20-Study-Priority-Guide/)
 
 ---
 
-## ⚠️ Important Note for Interviews
+### [📁 `02-DevOps-Comprehensive-Interview-Guide/`](./02-DevOps-Comprehensive-Interview-Guide/)
+> **Part 2: DevOps Core Comprehensive Interview Guide (Q1–Q172)**
+> 
+> Comprehensive, end-to-end interview question bank covering foundational concepts, cloud architecture, CI/CD pipelines, container security, Kubernetes objects, GitOps, observability, security theory, and production troubleshooting scenarios.
+> 
+> **Includes 18 organized tool sub-folders:**
+> - [01-Project-Overview (Q1–Q8)](./02-DevOps-Comprehensive-Interview-Guide/01-Project-Overview/)
+> - [02-Linux-Fundamentals (Q9–Q16)](./02-DevOps-Comprehensive-Interview-Guide/02-Linux-Fundamentals/)
+> - [03-Git-Version-Control (Q17–Q23)](./02-DevOps-Comprehensive-Interview-Guide/03-Git-Version-Control/)
+> - [04-Networking-Fundamentals (Q24–Q31)](./02-DevOps-Comprehensive-Interview-Guide/04-Networking-Fundamentals/)
+> - [05-AWS-Cloud-Architecture (Q32–Q45)](./02-DevOps-Comprehensive-Interview-Guide/05-AWS-Cloud-Architecture/)
+> - [06-Terraform-IaC (Q46–Q60)](./02-DevOps-Comprehensive-Interview-Guide/06-Terraform-IaC/)
+> - [07-Docker-Containerization (Q61–Q72)](./02-DevOps-Comprehensive-Interview-Guide/07-Docker-Containerization/)
+> - [08-Jenkins-CI-Pipeline (Q73–Q83)](./02-DevOps-Comprehensive-Interview-Guide/08-Jenkins-CI-Pipeline/)
+> - [09-Trivy-Security-Scanning (Q84–Q89)](./02-DevOps-Comprehensive-Interview-Guide/09-Trivy-Security-Scanning/)
+> - [10-Kubernetes-Fundamentals (Q90–Q105)](./02-DevOps-Comprehensive-Interview-Guide/10-Kubernetes-Fundamentals/)
+> - [11-Helm-And-Kustomize (Q106–Q112)](./02-DevOps-Comprehensive-Interview-Guide/11-Helm-And-Kustomize/)
+> - [12-GitOps-ArgoCD (Q113–Q122)](./02-DevOps-Comprehensive-Interview-Guide/12-GitOps-ArgoCD/)
+> - [13-Gateway-API-And-ALB (Q123–Q133)](./02-DevOps-Comprehensive-Interview-Guide/13-Gateway-API-And-ALB/)
+> - [14-Autoscaling-Resource-Management (Q134–Q139)](./02-DevOps-Comprehensive-Interview-Guide/14-Autoscaling-Resource-Management/)
+> - [15-Observability-Monitoring-Logging (Q140–Q151)](./02-DevOps-Comprehensive-Interview-Guide/15-Observability-Monitoring-Logging/)
+> - [16-Security-Principles (Q152–Q158)](./02-DevOps-Comprehensive-Interview-Guide/16-Security-Principles/)
+> - [17-Advanced-Scenarios-Troubleshooting (Q159–Q172)](./02-DevOps-Comprehensive-Interview-Guide/17-Advanced-Scenarios-Troubleshooting/)
+> - [18-Rapid-Fire-And-Strategy (Revision & Interview Advice)](./02-DevOps-Comprehensive-Interview-Guide/18-Rapid-Fire-And-Strategy/)
 
-Components tested locally are **implemented** (Docker containers, microservices, local storage, API communication). Components still being developed are part of your **planned cloud architecture** (EKS, Karpenter, ALB, Gateway API, Route 53). Always distinguish between the two so you present your project accurately.
+---
+
+## ✨ Features Included for Every Question
+
+1. **🔑 Keywords to Remember:** Highlighted key technical terms for quick mental recall during interviews.
+2. **Beginner-Friendly Answer:** Clear, intuitive analogies in easy-to-understand paragraphs.
+3. **Detailed Answer:** The complete, production-grade technical theory provided in the content.
+4. **Cross-Questions & Scenario Analysis:** In-depth follow-up questions interviewers ask to test true practical understanding.
